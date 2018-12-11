@@ -1,4 +1,3 @@
 .env
 /inc/
 /vendor/
-composer.lock
