@@ -1,4 +1,7 @@
 <?php
+//Anderson Ismael
+//11 de Dezembro de 2018
+
 //dependencias
 require '../inc/autoload.php';
 if(isDev()){
@@ -7,14 +10,18 @@ if(isDev()){
     error_reporting(E_ALL);
 }
 
+//config
+date_default_timezone_set('America/Sao_Paulo');
+
 //regras
 $segment=segment();
 $controller=$segment[1];
-switch($controller){
-    case '/':
-    controller("home");
-    break;
-    default:
+if($controller=='/'){
+    $controller='home';
+}
+$filename=ROOT.'controller/'.$controller.'.php';
+if(file_exists($filename) && !strpos($controller, '-')){
+    controller($controller);
+}else{
     view('404');
-    break;
 }
