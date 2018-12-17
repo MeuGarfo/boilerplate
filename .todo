@@ -3,4 +3,7 @@
     <note priority="medium" time="1544551595">
         adicionar switch automatico de controller de acordo com o método (GET ou POST)
     </note>
+    <note priority="medium" time="1545050226">
+        adicionar os arquivos da pasta vendor para instalar mais rapido
+    </note>
 </todo>
