@@ -6,4 +6,7 @@
     <note priority="medium" time="1545050226">
         adicionar os arquivos da pasta vendor para instalar mais rapido
     </note>
+    <note priority="medium" time="1545050673">
+        caso o controller não exista mas a view exista abre direito a view
+    </note>
 </todo>
