@@ -21,10 +21,13 @@ if($controller=='/'){
 }
 $method=ucfirst(strtolower(getMethod()));
 $controller=$controller.$method;
-$filename=ROOT.'controller/'.$controller.'.php';
-if(file_exists($filename)){
+$filenameController=ROOT.'controller/'.$controller.'.php';
+$filenameView=ROOT.'view/'.$controller.'.php';
+if(file_exists($filenameController)){
     controller($controller);
+}elseif(file_exists($filenameView)){
+    $data['user']=isAuth();
+    view($controller,$data);
 }else{
     view('404');
 }
-
