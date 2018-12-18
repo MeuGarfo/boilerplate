@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <todo version="0.1.20">
-    <note priority="medium" time="1544551595">
+    <note priority="medium" time="1544551595" done="1545157122">
         adicionar switch automatico de controller de acordo com o método (GET ou POST)
     </note>
-    <note priority="medium" time="1545050226">
+    <note priority="medium" time="1545050226" done="1545157142">
         adicionar os arquivos da pasta vendor para instalar mais rapido
     </note>
-    <note priority="medium" time="1545050673">
+    <note priority="medium" time="1545050673" done="1545157160">
         caso o controller não exista mas a view exista abre direito a view
     </note>
 </todo>
